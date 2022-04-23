@@ -17,16 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView2"
-                android:layout_width="153dp"
-                android:layout_height="182dp"
-                android:layout_marginTop="8dp"
+                android:layout_width="118dp"
+                android:layout_height="114dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/img_2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.856"
+                app:layout_constraintHorizontal_bias="0.86"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/img_2" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -41,110 +41,74 @@
                 app:layout_constraintHorizontal_bias="0.188"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Picture"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#9B9BF2"
-            android:backgroundTint="#9B9BF2"
-            app:boxBackgroundColor="#9B9BF2"
-            app:hintTextColor="#09090D">
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etName"
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/et_fn"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:maxLines="1"
-                android:textColorHint="#09090D" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="First Name"
+                tools:ignore="TouchTargetSizeCheck" />
 
-        <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/et_ln"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Last Name"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_em"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#9B9BF2"
-            android:backgroundTint="#9B9BF2"
-            app:boxBackgroundColor="#9B9BF2"
-            app:hintTextColor="#09090D">
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Email"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Mobile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:maxLines="1"
-                android:textColorHint="#09090D" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/et_m"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#9B9BF2"
-            android:backgroundTint="#9B9BF2"
-            app:boxBackgroundColor="#9B9BF2"
-            app:hintTextColor="#09090D">
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Mobile No." />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etMobile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Mobile No."
-                android:inputType="number"
-                android:maxLines="1"
-                android:textColorHint="#09090D" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/et_p"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#9B9BF2"
-            android:backgroundTint="#9B9BF2"
-            app:boxBackgroundColor="#9B9BF2"
-            app:hintTextColor="#09090D">
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/login_password_hint" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:textColorHint="#09090D" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/et_cp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="#9B9BF2"
-            android:backgroundTint="#9B9BF2"
-            app:boxBackgroundColor="#9B9BF2"
-            app:hintTextColor="#09090D">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etCPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:textColorHint="#09090D" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Confirm Password" />
 
         <Button
             android:id="@+id/cirRegisterButton"
@@ -166,6 +130,7 @@
             android:textAlignment="center"
             android:textColor="#9B9BF2"
             android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 </ScrollView>
