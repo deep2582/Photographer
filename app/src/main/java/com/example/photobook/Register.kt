@@ -1,10 +1,11 @@
-package com.example.photobook
+package com.example.photographer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -58,9 +59,9 @@ class Register : AppCompatActivity() {
 
 
 
-            if(etFName!=null && etLName!=null && etEmail!=null && etMobile!=null && etPassword!=null && etCPassword!=null){
+            //if(etFName!=null && etLName!=null && etEmail!=null && etMobile!=null && etPassword!=null && etCPassword!=null){
                 if(Password == CPassword){
-                    if (w.isChecked){
+                    /*if (w.isChecked){
                         sp.add("Wedding")
                     }
                     if (k.isChecked){
@@ -71,8 +72,8 @@ class Register : AppCompatActivity() {
                     }
                     if (p.isChecked){
                         sp.add("Potrait")
-                    }
-                    val User = Photographer(FName,LName,Email,Mobile,Password,Gender,City,State,Country,Pin,About,sp)
+                    }*/
+                    val User = Photographer(FName,LName,Email,Mobile,Password,"Male",City,State,Country,Pin,About)
                     var myRef = database.getReference("Photographers")
                     var data = myRef.child(Mobile)
 
@@ -103,10 +104,10 @@ class Register : AppCompatActivity() {
                 else{
                     Toast.makeText(this,"Password doesn't match!!",Toast.LENGTH_SHORT).show()
                 }
-            }
+            /*}
             else{
                 Toast.makeText(this,"Enter all information correctly!!",Toast.LENGTH_SHORT).show()
-            }
+            }*/
 
 
 

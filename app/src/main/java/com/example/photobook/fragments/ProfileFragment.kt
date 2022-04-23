@@ -1,4 +1,4 @@
-package com.example.photobook.fragments
+package com.example.photographer.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,13 +9,13 @@ import android.widget.TextView
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlin.toString as toString
-import android.R
+import com.example.photographer.R
 import android.content.Intent
 import android.widget.Button
 
 import android.widget.EditText
-import com.example.photobook.Home
-import com.example.photobook.Login
+import com.example.photographer.Home
+import com.example.photographer.Login
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -50,18 +50,18 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(com.example.photobook.R.layout.fragment_profile, container, false)
+        return inflater.inflate(com.example.photographer.R.layout.fragment_profile, container, false)
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val database = Firebase.database
-        var Name = view.findViewById<TextView>(com.example.photobook.R.id.name)
-        var Email = view.findViewById<TextView>(com.example.photobook.R.id.email)
-        var Mobile = view.findViewById<TextView>(com.example.photobook.R.id.mobile)
-        var n = view.findViewById<TextView>(com.example.photobook.R.id.textView4)
-        var logout=view.findViewById<Button>(com.example.photobook.R.id.btn_logout)
+        var Name = view.findViewById<TextView>(com.example.photographer.R.id.name)
+        var Email = view.findViewById<TextView>(com.example.photographer.R.id.email)
+        var Mobile = view.findViewById<TextView>(com.example.photographer.R.id.mobile)
+        var n = view.findViewById<TextView>(com.example.photographer.R.id.textView4)
+        var logout=view.findViewById<Button>(com.example.photographer.R.id.btn_logout)
         val data = arguments
         var m = data?.get("string").toString()
 

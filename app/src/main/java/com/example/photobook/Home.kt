@@ -1,11 +1,11 @@
-package com.example.photobook
+package com.example.photographer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.photobook.fragments.BookingFragment
-import com.example.photobook.fragments.AvailibilityFragment
-import com.example.photobook.fragments.ProfileFragment
+import com.example.photographer.fragments.BookingFragment
+import com.example.photographer.fragments.AvailibilityFragment
+import com.example.photographer.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home : AppCompatActivity() {

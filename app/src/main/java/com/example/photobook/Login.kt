@@ -1,4 +1,4 @@
-package com.example.photobook
+package com.example.photographer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.photobook.fragments.ProfileFragment
+import com.example.photographer.fragments.ProfileFragment
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 

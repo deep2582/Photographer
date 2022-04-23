@@ -1,4 +1,4 @@
-package com.example.photobook
+package com.example.photographer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

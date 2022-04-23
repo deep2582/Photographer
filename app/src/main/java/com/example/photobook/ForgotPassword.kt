@@ -1,4 +1,4 @@
-package com.example.photobook
+package com.example.photographer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

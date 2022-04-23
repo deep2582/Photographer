@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "216867042044",
+    "firebase_url": "https://photobook-7f70b-default-rtdb.firebaseio.com",
     "project_id": "photobook-7f70b",
     "storage_bucket": "photobook-7f70b.appspot.com"
   },
@@ -10,6 +11,35 @@
         "mobilesdk_app_id": "1:216867042044:android:38f454c880e39742d9dd79",
         "android_client_info": {
           "package_name": "com.example.photobook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216867042044-lcma6kagtdskpb34tg6c9kkreteks3s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASiamz4g69H6kdyngWhSIDMjqpLgInt2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216867042044-lcma6kagtdskpb34tg6c9kkreteks3s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216867042044:android:e137ba6bb4283124d9dd79",
+        "android_client_info": {
+          "package_name": "com.example.photographer"
         }
       },
       "oauth_client": [
