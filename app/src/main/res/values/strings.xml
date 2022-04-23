@@ -1,14 +1,12 @@
 <resources>
-    <string name="app_name">Photobook</string>
-    <string name="login_email_hint">Email</string>
+    <string name="app_name">Photographer</string>
+    <string name="login_email_hint">Mobile</string>
     <string name="login_password_hint">Password</string>
-    <string-array name="role">
-        <item>Photographer</item>
-        <item>Client</item>
-        <item>Admin</item>
-    </string-array>
     <string name="title_activity_home">Home</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_bookings">My Bookings</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

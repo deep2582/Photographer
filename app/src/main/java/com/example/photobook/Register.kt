@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -24,10 +22,9 @@ class Register : AppCompatActivity() {
         val RegisterBtn=findViewById<Button>(R.id.cirRegisterButton)
         val etName=findViewById<EditText>(R.id.etName)
         val etMobile=findViewById<EditText>(R.id.etMobile)
-        val etEmail=findViewById<EditText>(R.id.etEmail)
-        val etPassword=findViewById<EditText>(R.id.etPassword)
+        val etEmail=findViewById<EditText>(R.id.Mobile)
+        val etPassword=findViewById<EditText>(R.id.Password)
         val etCPassword=findViewById<EditText>(R.id.etCPassword)
-        val role=findViewById<Spinner>(R.id.Role)
 
 
         RegisterBtn.setOnClickListener {
@@ -39,15 +36,14 @@ class Register : AppCompatActivity() {
             val Mobile = etMobile.text.toString()
             val Password = etPassword.text.toString()
             val CPassword = etCPassword.text.toString()
-            val Role = role.getSelectedItem().toString()
 
 
 
-            if(Name!=null && Email!=null && Mobile!=null && Password!=null && CPassword!=null){
+            if(etName!=null && etEmail!=null && etMobile!=null && etPassword!=null && etCPassword!=null){
                 if(Password == CPassword){
-                    val User = User(Name,Email,Mobile,Password,Role)
+                    val User = User(Name,Email,Mobile,Password)
                     var myRef = database.getReference("Users")
-                    var data = myRef.child(Email)
+                    var data = myRef.child(Mobile)
                     data.setValue(User).addOnSuccessListener {
 
                         etName.text.clear()
@@ -80,18 +76,6 @@ class Register : AppCompatActivity() {
 
         }
 
-
-        //Code for spinner
-        val spinner: Spinner = findViewById(R.id.Role)
-
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.role,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinner.adapter = adapter
-        }
     }
     fun onLoginClick(view: View?) {
         startActivity(Intent(this, Login::class.java))

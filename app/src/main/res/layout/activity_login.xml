@@ -40,11 +40,13 @@
 
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
-                    android:layout_width="189dp"
-                    android:layout_height="139dp"
+                    android:layout_width="167dp"
+                    android:layout_height="116dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="40dp"
                     android:text="Welcome \n to \nPhotobook."
-                    android:textColor="#F8FA77"
+                    android:textColor="#9B9BF2"
+                    android:textSize="30sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -53,50 +55,56 @@
                 android:id="@+id/textInputEmail"
                 style="@style/parent"
                 android:layout_marginTop="@dimen/loginViewsMargin"
-                android:background="#F8FA77"
-                android:backgroundTint="#F8FA77">
+                android:background="#9B9BF2"
+                android:backgroundTint="#9B9BF2"
+                app:boxBackgroundColor="#9B9BF2"
+                app:hintTextColor="#09090D">
 
                 <EditText
-                    android:id="@+id/etEmail"
+                    android:id="@+id/Mobile"
                     style="@style/modifiedEditText"
-                    android:backgroundTint="#563283"
+                    android:backgroundTint="#09090D"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColor="#09090D"
-                    android:textColorHighlight="#09090D"
-                    android:textColorHint="#09090D"
-                    android:textColorLink="#09090D"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:shadowColor="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
                 style="@style/parent"
                 android:layout_marginTop="@dimen/loginViewsMargin"
-                android:background="#F8FA77"
-                android:backgroundTint="#F8FA77">
+                android:background="#9B9BF2"
+                android:backgroundTint="#9B9BF2"
+                app:hintTextColor="#09090D">
 
                 <EditText
-                    android:id="@+id/etPassword"
+                    android:id="@+id/Password"
                     style="@style/modifiedEditText"
-                    android:backgroundTint="#563283"
+                    android:backgroundTint="#09090D"
                     android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:textColor="#09090D"
-                    android:textColorHighlight="#09090D"
-                    android:textColorHint="#09090D"
-                    android:textColorLink="#09090D"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:shadowColor="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/fp"
                 style="@style/viewParent"
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:text="Forgot Password?"
-                android:textColor="#F8FA77"
+                android:textColor="#9B9BF2"
                 android:textSize="@dimen/newsMoreTextSize" />x
 
             <Button
@@ -115,7 +123,7 @@
                 android:onClick="onLoginClick"
                 android:text="New user? Register Now"
                 android:textAlignment="center"
-                android:textColor="#F8FA77"
+                android:textColor="#9B9BF2"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -131,7 +139,7 @@
                     android:layout_width="0dp"
                     android:layout_height="1dp"
                     android:layout_weight="3"
-                    android:background="#F8FA77" />
+                    android:background="#9B9BF2" />
 
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
@@ -140,14 +148,14 @@
                     android:layout_weight="6"
                     android:text="OR"
                     android:textAlignment="center"
-                    android:textColor="#F8FA77"
+                    android:textColor="#9B9BF2"
                     android:textSize="12sp" />
 
                 <View
                     android:layout_width="0dp"
                     android:layout_height="1dp"
                     android:layout_weight="3"
-                    android:background="#F8FA77" />
+                    android:background="#9B9BF2" />
 
             </LinearLayout>
 

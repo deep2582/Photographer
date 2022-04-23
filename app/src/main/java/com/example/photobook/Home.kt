@@ -1,35 +1,42 @@
 package com.example.photobook
 
-import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.photobook.databinding.ActivityHomeBinding
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import com.example.photobook.fragments.BookingFragment
+import com.example.photobook.fragments.AvailibilityFragment
+import com.example.photobook.fragments.ProfileFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home : AppCompatActivity() {
 
-    private lateinit var binding: ActivityHomeBinding
+    private val availibilityFragment = AvailibilityFragment()
+    private val bookingFragment = BookingFragment()
+    private val profileFragment = ProfileFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
+        replaceFragment(profileFragment)
 
-        binding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val bottom_navigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottom_navigation.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.navigation_availibility -> replaceFragment(availibilityFragment)
+                R.id.navigation_bookings -> replaceFragment(bookingFragment)
+                R.id.navigation_profile -> replaceFragment(profileFragment)
+            }
+            true
+        }
+    }
 
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_home)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+    private fun replaceFragment(fragment: Fragment){
+        if(fragment != null){
+            val transection = supportFragmentManager.beginTransaction()
+            transection.replace(R.id.fragment_container,fragment)
+            transection.commit()
+        }
     }
 }
+
+

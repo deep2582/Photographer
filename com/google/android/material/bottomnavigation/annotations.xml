@@ -1,0 +1,8 @@
+<root>
+    <item
+        name='com.google.android.material.bottomnavigation.BottomNavigationView void setOnNavigationItemSelectedListener(com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="pure" val="true" />
+        </annotation>
+    </item>
+</root>

@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/button_background_blue.xml" value="0.2520833333333333" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/camera.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2520833333333333" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.26614583333333336" />
@@ -11,14 +13,31 @@
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/input.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/login_btn_bg.xml" value="0.2520833333333333" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/drawable/logo.xml" value="0.2625" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_booking.xml" value="0.264" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_forgot_password.xml" value="0.24615384615384617" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_home.xml" value="0.23822463768115942" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_main.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/dropdown_menu.xml" value="0.2427536231884058" />
-        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_dashboard.xml" value="0.22916666666666666" />
-        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_home.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_booking.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_bookings.xml" value="0.1" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_home2.xml" value="0.25" />
         <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_notifications.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_profile2.xml" value="0.2" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/layout/fragment_search2.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photobook/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/dropdown_menu.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/fragment_availibility.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/layout/fragment_booking.xml" value="0.25" />
+        <entry key="..\:/Users/deep2/AndroidStudioProjects/Photographer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
